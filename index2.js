@@ -121,5 +121,12 @@ let elegirSandwich  = prompt("¡Bienvenid@ a nuestro menu virtual! ¿Que queres 
     }
     }
 
+    let pedidoRecibido = document.createElement("h2");
+    pedidoRecibido.innerHTML = "<h2> ¡tu pedido fue solicitado, gracias!";
+    document.body.append(pedidoRecibido);
+    let correo = document.getElementById("email");
+    correo.addEventListener("input", () => {
+        console.log(correo.value)
+    })
 
     
