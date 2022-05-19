@@ -125,8 +125,6 @@ let elegirSandwich  = prompt("¡Bienvenid@ a nuestro menu virtual! ¿Que queres 
     pedidoRecibido.innerHTML = "<h2> ¡tu pedido fue solicitado, gracias!";
     document.body.append(pedidoRecibido);
     let correo = document.getElementById("email");
-    correo.addEventListener("input", () => {
-        console.log(correo.value)
-    })
+    correo.onkeyup = () => {console.log("keyUp")}
 
     
